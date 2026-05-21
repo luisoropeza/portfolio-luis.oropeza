@@ -10,9 +10,9 @@ const education = [
   },
   {
     degree: "Postgraduate Diploma in Enterprise Software Development",
-    institution: "Specialization",
-    location: "Spring Boot (Java), Vue.js, PostgreSQL",
-    period: "2024",
+    institution: "Universidad Mayor de San Simón",
+    location: "Specialization: Spring Boot, React.js, PostgreSQL",
+    period: "2023 – 2024",
     icon: "📜",
     color: "violet",
   },
@@ -64,8 +64,31 @@ const colorMap: Record<string, { card: string; icon: string; period: string }> =
       })}
     </div>
 
+    <!-- Courses -->
+    <div class="edu-card opacity-0 translate-y-8 transition-all duration-700 mb-10" style="transition-delay: 240ms">
+      <h3 class="text-center text-sm font-semibold text-slate-400 uppercase tracking-widest mb-6">Courses</h3>
+      <div class="grid sm:grid-cols-2 gap-3">
+        {[
+          { title: "Hands-On Advanced SQL Server: Strategies and Techniques", platform: "LinkedIn Learning", year: "2026" },
+          { title: "AI-Powered Software Development: Coding, Testing, and System Design", platform: "LinkedIn Learning", year: "2026" },
+          { title: "C# and .NET Essential Training", platform: "LinkedIn Learning", year: "2026" },
+          { title: "Creating Spring Boot Microservices", platform: "LinkedIn Learning", year: "2026" },
+          { title: "Introduction to AWS Course: Cloud Computing Fundamentals", platform: "Platzi", year: "2026" },
+          { title: "Introduction to AWS: Compute, Storage, and Databases", platform: "Platzi", year: "2026" },
+        ].map((course) => (
+          <div class="flex items-start gap-3 bg-slate-50 rounded-xl p-4 border border-slate-100 hover:border-blue-200 hover:bg-blue-50/30 transition-all duration-200">
+            <span class="text-blue-400 mt-0.5 flex-shrink-0">▸</span>
+            <div>
+              <p class="text-sm font-medium text-slate-700 leading-snug">{course.title}</p>
+              <p class="text-xs text-slate-400 mt-0.5">{course.platform} · {course.year}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
     <!-- Languages -->
-    <div class="edu-card opacity-0 translate-y-8 transition-all duration-700" style="transition-delay: 240ms">
+    <div class="edu-card opacity-0 translate-y-8 transition-all duration-700" style="transition-delay: 360ms">
       <h3 class="text-center text-sm font-semibold text-slate-400 uppercase tracking-widest mb-6">Languages</h3>
       <div class="flex flex-wrap justify-center gap-6">
         {[

@@ -4,13 +4,13 @@ const skillGroups = [
     category: "Backend",
     icon: "⚙️",
     color: "blue",
-    skills: [".NET / C#", "Spring Boot", "Java", "Kotlin", "REST APIs", "JWT"],
+    skills: [".NET", "Spring Boot", "Java", "C#", "REST APIs"],
   },
   {
     category: "Frontend",
     icon: "🖥️",
     color: "violet",
-    skills: ["Angular", "React.js", "Vue.js", "TypeScript", "JavaScript", "HTML & CSS"],
+    skills: ["Angular", "React.js", "TypeScript", "JavaScript", "HTML & CSS"],
   },
   {
     category: "Databases",
@@ -31,10 +31,16 @@ const skillGroups = [
     skills: ["Docker", "Git", "AWS EC2", "AWS S3"],
   },
   {
+    category: "QA Automation",
+    icon: "🧪",
+    color: "teal",
+    skills: ["Playwright", "Selenium"],
+  },
+  {
     category: "AI & Tooling",
     icon: "🤖",
     color: "rose",
-    skills: ["Claude Code", "AI Agents", "Prompt Engineering", "Test Automation"],
+    skills: ["Claude Code", "AI Agents", "Prompt Engineering"],
   },
 ];
 
@@ -44,6 +50,7 @@ const colorMap: Record<string, string> = {
   emerald: "bg-emerald-50 text-emerald-700 border-emerald-100 hover:bg-emerald-100",
   orange:  "bg-orange-50 text-orange-700 border-orange-100 hover:bg-orange-100",
   sky:     "bg-sky-50 text-sky-700 border-sky-100 hover:bg-sky-100",
+  teal:    "bg-teal-50 text-teal-700 border-teal-100 hover:bg-teal-100",
   rose:    "bg-rose-50 text-rose-700 border-rose-100 hover:bg-rose-100",
 };
 
@@ -53,6 +60,7 @@ const headerColorMap: Record<string, string> = {
   emerald: "text-emerald-600",
   orange:  "text-orange-600",
   sky:     "text-sky-600",
+  teal:    "text-teal-600",
   rose:    "text-rose-600",
 };
 ---
